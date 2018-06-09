@@ -234,8 +234,8 @@ item.reactioncraft.pollencomb.name=蜂巢
 item.reactioncraft.Blackdiamondbore.name=黑色钻石钻子
 item.reactioncraft.Bloodstonebore.name=血石钻子
 
-item.reactioncraft.raw_human.name=生的人类
-item.reactioncraft.cooked_human.name=熟的人类
+item.reactioncraft.raw_human.name=生的人肉
+item.reactioncraft.cooked_human.name=熟的人肉
 item.reactioncraft.raw_bacon.name=生的培根
 item.reactioncraft.beef_chunk.name=生的牛肉块
 item.reactioncraft.raw_pork.name=生的猪肉块
