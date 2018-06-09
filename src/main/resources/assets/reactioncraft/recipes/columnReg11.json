@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X ",
+        "XY",
+        "X "
+    ],
+    "result": {
+        "item": "reactioncraft:columnReg",
+        "count": 2,
+        "data": 10
+    },
+    "key": {
+        "X": {
+            "type": "forge:ore_dict",
+            "ore": "BloodstoneBrick"
+        },
+        "Y": {
+            "type": "forge:ore_dict",
+            "ore": "chisel"
+        }
+    }
+}

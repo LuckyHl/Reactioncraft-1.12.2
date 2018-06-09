@@ -35,7 +35,5 @@ public class BiomeHandler
 		BiomeManager.addSpawnBiome(reactionDesert);
 		BiomeDictionary.addTypes(reactionDesert, Type.DRY);
 	    BiomeManager.addVillageBiome(reactionDesert, true);
-
-
 	}
 }

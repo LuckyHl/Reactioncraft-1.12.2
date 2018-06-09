@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reactioncraft:rawcorn",
+            "item": "reactioncraft:cookedCorn",
             "data": 0
         }
     ],

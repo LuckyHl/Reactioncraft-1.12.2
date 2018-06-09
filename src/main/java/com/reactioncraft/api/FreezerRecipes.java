@@ -1,7 +1,9 @@
 package com.reactioncraft.api;
 
 import com.google.common.collect.Maps;
-import com.reactioncraft.Tools;
+import com.reactioncraft.items.tools.Tools;
+import com.reactioncraft.registration.instances.ItemIndex;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -27,9 +29,12 @@ public class FreezerRecipes
 
     private FreezerRecipes()
     {
-    	//test recipe
-        addSmelting(Items.GOLD_INGOT,new ItemStack(Blocks.GOLD_BLOCK),1);
+    	//Mirror this to add Recipes
+        addSmelting(Items.WATER_BUCKET,new ItemStack(ItemIndex.iceBucket),1);
+        addSmelting(Items.LAVA_BUCKET, new ItemStack(ItemIndex.obsidianBucket), 1);
+        addSmelting(ItemIndex.superheatedironingot, new ItemStack(Items.IRON_INGOT), 1);
     }
+
 
     /**
      * Adds a smelting recipe, where the input item is an instance of Block.
@@ -52,7 +57,7 @@ public class FreezerRecipes
      */
     public void addSmeltingRecipe(ItemStack input, ItemStack stack, float experience)
     {
-        if (getSmeltingResult(input) != null) { net.minecraftforge.fml.common.FMLLog.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
+        //if (getSmeltingResult(input) != null) { net.minecraftforge.fml.common.FMLLog.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
         this.smeltingList.put(input, stack);
         this.experienceList.put(stack, experience);
     }
@@ -72,6 +77,4 @@ public class FreezerRecipes
 
         return ItemStack.EMPTY;
     }
-
-
 }

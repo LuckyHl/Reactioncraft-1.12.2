@@ -1,10 +1,13 @@
 package com.reactioncraft.blocks;
 
+import java.util.Random;
+
 import com.reactioncraft.registration.instances.BlockIndex;
 import com.reactioncraft.registration.instances.ItemIndex;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
@@ -46,5 +49,11 @@ public class BlockBaseDoor extends BlockDoor
         return mirrorIn == Mirror.NONE ? state : state.withRotation(mirrorIn.toRotation(state.getValue(FACING))).cycleProperty(HINGE);
     }
 
-
+    /**
+     * Get the Item that this Block should drop when harvested.
+     */
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return state.getValue(HALF) == BlockBaseDoor.EnumDoorHalf.UPPER ? Items.AIR : this.getItem();
+    }
 }

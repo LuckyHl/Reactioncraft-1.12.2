@@ -1,6 +1,6 @@
 {
   "parent":"reactioncraft:block/column",
   "textures":{
-    "all": "reactioncraft:blocks/goldsymbols1"
+    "all": "blocks/brick"
   }
 }

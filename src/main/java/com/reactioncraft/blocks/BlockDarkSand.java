@@ -24,7 +24,7 @@ public class BlockDarkSand extends BlockFalling
     
     public BlockDarkSand(Material materialIn)
     {
-        super(materialIn);
+        super();
         this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumSands.one1));
         this.setCreativeTab(Reactioncraft.Reactioncraft);
     }

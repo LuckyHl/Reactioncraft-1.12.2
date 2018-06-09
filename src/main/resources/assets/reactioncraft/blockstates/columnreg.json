@@ -1,91 +1,90 @@
 {
-    "forge_marker" : 1,
-    "defaults" : {
-      "model" : "reactioncraft:column"
-
-    },
-    "variants": {
-        "type" : {
-          "0" : {
-                "textures" : {
-                    "all" : "reactioncraft:blocks/BrownSymbol1"
+	"forge_marker": 1,
+	"defaults": {
+		"model": "reactioncraft:column"
+	},
+	"variants": {
+		"type": {
+			"0": {
+				"textures": {
+					"all": "reactioncraft:blocks/css"
+				}
+			},
+			"1": {
+				"textures": {
+					"all": "reactioncraft:blocks/Quartz"
+				}
+			},
+			"2": {
+				"textures": {
+					"all": "reactioncraft:blocks/SandBrick"
+				}
+			},
+			"3": {
+				"textures": {
+					"all": "reactioncraft:blocks/MutiBrick"
+				}
+			},
+			"4": {
+				"textures": {
+					"all": "blocks/cobblestone"
+				}
+			},
+			"5": {
+				"textures": {
+					"all": "blocks/stone"
+				}
+			},
+			"6": {
+				"textures": {
+					"all": "blocks/diamond_block"
+				}
+			},
+			"7": {
+				"textures": {
+					"all": "blocks/stonebrick"
+				}
+			},
+			"8": {
+				"textures": {
+					"all": "blocks/gold_block"
+				}
+			},
+			"9": {
+				"textures": {
+					"all": "blocks/brick"
+				}
+			},
+			"10": {
+				"textures": {
+                    "all": "blocks/stone_slab_side"
                 }
-            },
-          "1": {
-            "textures": {
-              "all": "reactioncraft:blocks/BrownSymbol2"
-            }
-          },
-          "2": {
-            "textures": {
-              "all": "reactioncraft:blocks/BrownSymbol3"
-            }
-          },
-          "3": {
-            "textures": {
-              "all": "reactioncraft:blocks/darkbluesymbol1"
-            }
-          },
-          "4": {
-            "textures": {
-              "all": "reactioncraft:blocks/darkbluesymbol2"
-            }
-          },
-          "5": {
-            "textures": {
-              "all": "reactioncraft:blocks/darkbluesymbol3"
-            }
-          },
-          "6": {
-            "textures": {
-              "all": "reactioncraft:blocks/lightbluesymbol1"
-            }
-          },
-          "7": {
-            "textures": {
-              "all": "reactioncraft:blocks/lightbluesymbol2"
-            }
-          },
-          "8": {
-            "textures": {
-              "all": "reactioncraft:blocks/lightbluesymbol3"
-            }
-          },
-          "9": {
-            "textures": {
-              "all": "reactioncraft:blocks/goldsymbols1"
-            }
-          },
-          "10": {
-            "textures": {
-              "all": "reactioncraft:blocks/goldsymbols2"
-            }
-          },
-          "11": {
-            "textures": {
-              "all": "reactioncraft:blocks/goldsymbols3"
-            }
-          },
-          "12": {
-            "textures": {
-              "all": "reactioncraft:blocks/weathered"
-            }
-          },
-          "13" : {
-            "textures" : {
-              "all" : "reactioncraft:blocks/mutibrick"
-            }
-          },
-          "14" : {
-            "textures" : {
-              "all" : "reactioncraft:blocks/css"
-            }
-          },
-          "15" : {
-            "textures" : {
-              "all" : "reactioncraft:blocks/sandbrick"
-            }
-          }
-        }
-    }
+			},
+			"11": {
+				"textures": {
+					"all": "reactioncraft:blocks/bloodstonebricks"
+				}
+			},
+			"12": {
+				"textures": {
+					"all": "reactioncraft:blocks/weathered"
+				}
+			},
+			"13": {
+				"textures": {
+					"all": "reactioncraft:blocks/mutibrick"
+				}
+			},
+			"14": {
+				"textures": {
+					"all": "reactioncraft:blocks/css"
+				}
+			},
+			"15": {
+				"textures": {
+					"all": "reactioncraft:blocks/sandbrick"
+				}
+			}
+		}
+	}
 }

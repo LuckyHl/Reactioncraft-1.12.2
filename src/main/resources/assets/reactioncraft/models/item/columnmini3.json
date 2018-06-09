@@ -1,6 +1,6 @@
 {
   "parent":"reactioncraft:block/columnmini",
   "textures":{
-    "all": "reactioncraft:blocks/darkbluesymbol1"
+    "all": "reactioncraft:blocks/MutiBrick"
   }
 }

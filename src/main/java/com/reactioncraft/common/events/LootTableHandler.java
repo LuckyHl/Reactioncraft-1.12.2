@@ -3,6 +3,7 @@ package com.reactioncraft.common.events;
 
 import com.reactioncraft.registration.instances.ItemIndex;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
@@ -18,14 +19,17 @@ public class LootTableHandler
     @SubscribeEvent
     public void addLoot(LootTableLoadEvent lootTableLoadEvent)
     {
-        LootEntry ingot_mould_entry=createDefaultLootEntry(ItemIndex.ingotmould);
+		//ItemStacks
+    	LootEntry coin_mould=createDefaultLootEntryMeta(ItemIndex.coinMould);
+    	LootEntry ingot_mould_entry=createDefaultLootEntryMeta(ItemIndex.ingotmould);
+    	
+    	//Items
         LootEntry bronze_ingot=createDefaultLootEntry(ItemIndex.ingotBronze);
-        LootEntry coin_mould=createDefaultLootEntry(ItemIndex.coinMould);
-//            LootEntry mask=createDefaultLootEntry(ItemIndex.mas)
+        LootEntry corn=createDefaultLootEntry(ItemIndex.rawcorn);
         LootEntry ruby=createDefaultLootEntry(ItemIndex.ruby);
         LootEntry ancient_fruit=createDefaultLootEntry(ItemIndex.ancientFruit);
         LootEntry ancient_flower=createDefaultLootEntry(ItemIndex.ancientFlower);
-        LootEntry corn_seeds=createDefaultLootEntry(ItemIndex.popcornseeds);
+        LootEntry corn_seeds=createDefaultLootEntry(ItemIndex.cornSeed);
         LootEntry sugar_cane=createDefaultLootEntry(ItemIndex.sugarcaneItemBase);
          ResourceLocation tableName=lootTableLoadEvent.getName();
         LootTable lootTable=lootTableLoadEvent.getTable();
@@ -36,27 +40,27 @@ public class LootTableHandler
         }
         else if(tableName==LootTableList.CHESTS_ABANDONED_MINESHAFT)
         {
-            LootPool lootPool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry,bronze_ingot,coin_mould,ancient_flower,ancient_fruit,corn_seeds,sugar_cane},"mineshaft");
+            LootPool lootPool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry, bronze_ingot,coin_mould,ancient_flower,ancient_fruit,corn_seeds,sugar_cane},"mineshaft");
             lootTable.addPool(lootPool);
         }
         else if(tableName==LootTableList.CHESTS_DESERT_PYRAMID)
         {
-            LootPool lootPool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry,coin_mould,ruby},"pyramid");
+            LootPool lootPool=createDefaultLootPool(new LootEntry[]{coin_mould,ruby},"pyramid");
             lootTable.addPool(lootPool);
         }
         else if(tableName==LootTableList.CHESTS_JUNGLE_TEMPLE)
         {
-            LootPool lootPool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry,coin_mould,ruby,ancient_flower,ancient_fruit,corn_seeds,sugar_cane},"jungle temple");
+            LootPool lootPool=createDefaultLootPool(new LootEntry[]{coin_mould,ruby,ancient_flower,ancient_fruit,corn_seeds,sugar_cane},"jungle temple");
             lootTable.addPool(lootPool);
         }
         else if(tableName==LootTableList.CHESTS_VILLAGE_BLACKSMITH)
         {
-            LootPool pool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry,bronze_ingot,coin_mould},"blacksmith");
+            LootPool pool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry, bronze_ingot,coin_mould},"blacksmith");
             lootTable.addPool(pool);
         }
         else if(tableName==LootTableList.CHESTS_SIMPLE_DUNGEON)
         {
-//            LootPool pool=createDefaultLootPool(new LootEntry[]{})
+ //           LootPool pool=createDefaultLootPool(new LootEntry[]{ingot_mould_entry})
         }
         else if(tableName==LootTableList.GAMEPLAY_FISHING)
         {
@@ -65,7 +69,6 @@ public class LootTableHandler
             LootPool pool=createDefaultLootPool(new LootEntry[]{salmon,yellowtail},"fishing");
             lootTable.addPool(pool);
         }
-//        ChestGenHooks.addItem("dungeonChest", new WeightedRandomChestContent(new ItemStack(IntegratedItems.hiveframe, 1, 0), 1, 2, 5));
     }
 
     private LootPool createDefaultLootPool(LootEntry[] lootEntries,String id)
@@ -78,6 +81,13 @@ public class LootTableHandler
     private LootEntryItem createDefaultLootEntry(Item item)
     {
         SetDamage lootFunction=new SetDamage(new LootCondition[]{},new RandomValueRange(0));
+        SetCount setCount=new SetCount(new LootCondition[]{},new RandomValueRange(1));
+        LootEntryItem lootEntryItem=new LootEntryItem(item,5,1,new LootFunction[]{lootFunction,setCount},new LootCondition[]{},item.getRegistryName().getResourcePath());
+        return lootEntryItem;
+    }
+    private LootEntryItem createDefaultLootEntryMeta(Item item)
+    {
+        SetDamage lootFunction=new SetDamage(new LootCondition[]{},new RandomValueRange(100));
         SetCount setCount=new SetCount(new LootCondition[]{},new RandomValueRange(1));
         LootEntryItem lootEntryItem=new LootEntryItem(item,5,1,new LootFunction[]{lootFunction,setCount},new LootCondition[]{},item.getRegistryName().getResourcePath());
         return lootEntryItem;

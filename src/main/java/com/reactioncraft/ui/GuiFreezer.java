@@ -30,7 +30,7 @@ public class GuiFreezer extends UIContainerBase
      */
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-        String s = this.freezer.getDisplayName().getUnformattedText();
+        String s = "Freezer";
         this.fontRenderer.drawString(s, this.xSize / 2 - this.fontRenderer.getStringWidth(s) / 2, 6, 4210752);
         this.fontRenderer.drawString(this.playerInventory.getDisplayName().getUnformattedText(), 8, this.ySize - 96 + 2, 4210752);
     }

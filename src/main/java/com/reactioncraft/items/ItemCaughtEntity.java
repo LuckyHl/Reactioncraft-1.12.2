@@ -5,7 +5,9 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagDouble;
@@ -24,7 +26,7 @@ import java.util.List;
 
 public class ItemCaughtEntity extends ItemBase
 {
-    public ItemCaughtEntity(String name)
+	public ItemCaughtEntity(String name)
     {
         super(name);
     }
@@ -42,18 +44,19 @@ public class ItemCaughtEntity extends ItemBase
         return super.getItemStackDisplayName(stack);
     }
 
-    private @Nullable String getEntityName(ItemStack stack)
+    private String getEntityName(ItemStack stack)
     {
-        NBTTagCompound tag = this.getEntityTag(stack);
-
+        NBTTagCompound tag = this.getEntityTag(stack); 
+       
         if (tag != null)
         {
-            String name = tag.getString("CustomName");
+        	String name = tag.getString("Name");
 
             if (tag.hasKey("id", Constants.NBT.TAG_STRING))
             {
-                String id = tag.getString("id");
-                String translated = I18n.format("entity." + id + ".name");
+                 
+               String id = tag.getString("name");
+               String translated = I18n.format(id);
 
                 if (!id.equals(translated))
                 {
@@ -69,7 +72,7 @@ public class ItemCaughtEntity extends ItemBase
         return null;
     }
 
-    @Override
+	@Override
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         ItemStack stack=player.getHeldItem(hand);
         if (this.spawnCreature(worldIn, stack, pos.getX() + hitX, pos.getY() + hitY, pos.getZ() + hitZ) != null)

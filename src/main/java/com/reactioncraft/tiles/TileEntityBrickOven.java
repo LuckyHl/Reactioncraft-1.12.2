@@ -1,6 +1,5 @@
 package com.reactioncraft.tiles;
 
-import com.reactioncraft.ItemHandler;
 import com.reactioncraft.api.BrickOvenRecipes;
 import com.reactioncraft.itemhandlers.BrickOvenItemHandler;
 import com.reactioncraft.registration.instances.BlockIndex;

@@ -1,5 +1,7 @@
 package com.reactioncraft.registration;
 
+import com.reactioncraft.common.recipes.RecipeRegistry;
+
 public class RecipesManager
 {
 	public static void registerRecipes() 
@@ -7,12 +9,13 @@ public class RecipesManager
 		RecipeRegistry.netrecipyInit();
     	RecipeRegistry.oreSmelting();
     	RecipeRegistry.glassRecipesInit();
-    	RecipeRegistry.mobsRecipesInit();
     	RecipeRegistry.loadRecipesforVanilla();
     	RecipeRegistry.foodRecipesInit();
     	RecipeRegistry.loadORES();
     	RecipeRegistry.currencyRecipesInit();
-    	RecipeRegistry.loadCore();
     	RecipeRegistry.miscRecipesInit();
+    	RecipeRegistry.loadDesertRecipes();
+    	RecipeRegistry.forestry();
+    	RecipeRegistry.ic2();
 	}
 }

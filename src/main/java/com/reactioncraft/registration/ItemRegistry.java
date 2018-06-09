@@ -136,23 +136,22 @@ public class ItemRegistry
         ItemIndex.cherry_door           =  register(new ItemBaseDoor("item_cherry_door",        BlockIndex.cherrydoor),forgeRegistry);
 
         //Currency Items
-        ItemIndex.bag = register(new ItemBase("Bag")             .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.sack = register(new ItemBase("Sack")            .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.straw = register(new ItemBase("Straw")           .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.bag = register(new ItemBase("Bag")                .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.sack = register(new ItemBase("Sack")              .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.straw = register(new ItemBase("Straw")            .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.coinMould = (ItemBase) register(new ItemBase("CoinMould")       .setMaxDamage(15)  .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.moltengold        = (ItemBase) register(new ItemBase("moltengold")      .setContainerItem(Items.BUCKET) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.moltensilver      = (ItemBase) register(new ItemBase("moltensilver")    .setContainerItem(Items.BUCKET) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.moltencopper      = (ItemBase) register(new ItemBase("moltencopper")    .setContainerItem(Items.BUCKET) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.moltenbronze      = (ItemBase) register(new ItemBase("moltenbronze")    .setContainerItem(Items.BUCKET) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.copperbucket      = register(new ItemBase("copperbucket")    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.silverbucket      = register(new ItemBase("silver_bucket")    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.bronzebucket      = register(new ItemBase("bronzebucket")    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.goldbucket        = register(new ItemBase("goldbucket")      .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.ingotRefinedgold  = register(new ItemBase("ingotRefinedgold").setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.ingotBronze       = register(new ItemBase("ingotBronze")     .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.ingotSilver = register(new ItemBase("ingotsilver")         .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-
-        ItemIndex.ingotCopper       = register(new ItemBase("ingotCopper")     .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.moltengold        = (ItemBase) register(new ItemBase("moltengold")      .setContainerItem(Items.BUCKET).setMaxStackSize(1) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.moltensilver      = (ItemBase) register(new ItemBase("moltensilver")    .setContainerItem(Items.BUCKET).setMaxStackSize(1) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.moltencopper      = (ItemBase) register(new ItemBase("moltencopper")    .setContainerItem(Items.BUCKET).setMaxStackSize(1) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.moltenbronze      = (ItemBase) register(new ItemBase("moltenbronze")    .setContainerItem(Items.BUCKET).setMaxStackSize(1) .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.copperbucket      = (ItemBase) register(new ItemBase("copperbucket")  .setMaxStackSize(1)       .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.silverbucket      = (ItemBase) register(new ItemBase("silver_bucket") .setMaxStackSize(1)       .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.bronzebucket      = (ItemBase) register(new ItemBase("bronzebucket")  .setMaxStackSize(1)        .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.goldbucket        = (ItemBase) register(new ItemBase("goldbucket")    .setMaxStackSize(1)          .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.ingotRefinedgold  = register(new ItemBase("ingotRefinedgold")    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.ingotBronze       = register(new ItemBase("ingotBronze")         .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.ingotSilver       = register(new ItemBase("ingotsilver")         .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.ingotCopper       = register(new ItemBase("ingotCopper")         .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.ingotmould        = (ItemBase) register(new ItemBase("ingotmould")  .setMaxDamage(15)    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.ruby              = register(new ItemBase("ruby")            .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.coins = (ItemCoin) register(new ItemCoin()    .setCreativeTab(Reactioncraft.ReactioncraftItems).setRegistryName("coin"),forgeRegistry);
@@ -176,7 +175,11 @@ public class ItemRegistry
         ItemIndex.bloodstonechest   = register((ItemBloodStoneArmor)new ItemBloodStoneArmor(1,EntityEquipmentSlot.CHEST) .setCreativeTab(Reactioncraft.ReactioncraftItems).setRegistryName(Reactioncraft.MODID,"bloodstonechest").setUnlocalizedName(Reactioncraft.MODID+".bloodstonechest"),forgeRegistry);
         ItemIndex.bloodstonelegs    = register((ItemBloodStoneArmor) new ItemBloodStoneArmor(2,EntityEquipmentSlot.LEGS)  .setCreativeTab(Reactioncraft.ReactioncraftItems).setRegistryName(Reactioncraft.MODID,"bloodstonelegs").setUnlocalizedName(Reactioncraft.MODID+".bloodstonelegs"),forgeRegistry);
         ItemIndex.bloodstoneboots   = register((ItemBloodStoneArmor) new ItemBloodStoneArmor(3,EntityEquipmentSlot.FEET) .setCreativeTab(Reactioncraft.ReactioncraftItems).setRegistryName(Reactioncraft.MODID,"bloodstoneboots").setUnlocalizedName(Reactioncraft.MODID+".bloodstoneboots"),forgeRegistry);
-
+        
+        //Mining Helmets
+        ItemIndex.miningHelmLit         = (ItemMiningHelm)     register(new ItemMiningHelm("miningHelmLit",          MaterialIndex.EnumArmorMaterialCrown6, 0, EntityEquipmentSlot.HEAD)   .setCreativeTab(null),forgeRegistry);
+        ItemIndex.miningHelmUnlit       = (ItemMiningHelmUL)   register(new ItemMiningHelmUL("miningHelmUnlit",      MaterialIndex.EnumArmorMaterialCrown7, 0, EntityEquipmentSlot.HEAD)   .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        
         //Weapons
         ItemIndex.bat = register(new ItemBase("Bat")                   .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.obbySword = register(new ItemObsidanSword("ObbySword", MaterialIndex.EnumToolMaterialObby),forgeRegistry);
@@ -207,7 +210,7 @@ public class ItemRegistry
         ItemIndex.honeycomb        = register(new ItemBase("honeycomb")       .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.pollencomb       = register(new ItemBase("pollencomb")      .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
         ItemIndex.blackdiamondbore = register(new ItemBase("Blackdiamondbore").setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
-        ItemIndex.bloodstonebore = register(new ItemBase("Bloodstonebore")  .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
+        ItemIndex.bloodstonebore = register(new ItemBase("Bloodstonebore")    .setCreativeTab(Reactioncraft.ReactioncraftItems),forgeRegistry);
     }
 
    

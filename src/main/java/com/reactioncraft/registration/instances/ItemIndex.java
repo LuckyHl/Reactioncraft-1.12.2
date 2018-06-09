@@ -149,6 +149,10 @@ public class ItemIndex
     public static ItemExtraCrowns rubycrown;
     public static ItemExtraCrowns darkbluecrown;
     public static ItemExtraCrowns bloodstonecrown;
+    
+    public static ItemMiningHelmUL miningHelmUnlit;
+    public static ItemMiningHelm   miningHelmLit;
+    
     public static ItemBloodStoneArmor bloodstonehelm;
     public static ItemBloodStoneArmor bloodstonechest;
     public static ItemBloodStoneArmor bloodstonelegs;

@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "age=5": {
+            "model": "reactioncraft:ancientplant5"
+        },
+        "age=4": {
+            "model": "reactioncraft:ancientplant4"
+        },
+        "age=3": {
+            "model": "reactioncraft:ancientplant3"
+        },
+        "age=2": {
+            "model": "reactioncraft:ancientplant2"
+        },
+        "age=1": {
+            "model": "reactioncraft:ancientplant1"
+        },
+        "age=7": {
+            "model": "reactioncraft:ancientplant7"
+        },
+        "age=6": {
+            "model": "reactioncraft:ancientplant6"
+        },
+        "age=0" : {
+            "model" : "reactioncraft:ancientplant0"
+        }
+    }
+}

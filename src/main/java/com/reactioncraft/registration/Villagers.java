@@ -41,6 +41,7 @@ public class Villagers {
                 //and so on
             }
         });
+        
         //when villager's level goes up, new trades are unlocked
         villagerCareer.addTrade(2, new EntityVillager.ITradeList() {
             @Override

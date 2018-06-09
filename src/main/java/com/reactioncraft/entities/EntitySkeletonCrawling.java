@@ -15,22 +15,25 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
+import com.reactioncraft.core.Logger;
+
 public class EntitySkeletonCrawling extends EntityMob
 {
     static final DataParameter<Byte> skeletonVariation= EntityDataManager.createKey(EntitySkeletonCrawling.class,DataSerializers.BYTE);
     static final String TYPE="Variation";
+    static final String TYPE1="Variation";
     public EntitySkeletonCrawling(World world)
     {
         super(world);
-        this.tasks.addTask(0, new EntityAISwimming(this));
-        this.tasks.addTask(1, new EntityAIBreakDoor(this));
-        tasks.addTask(2,new EntityAIAttackMelee(this,1,false));
+        this.tasks.addTask(1, new EntityAIWanderAvoidWater(this, 0.8D));
+        this.tasks.addTask(2, new EntityAIBreakDoor(this));
+        this.tasks.addTask(3,new EntityAIAttackMelee(this,1,false));
         this.tasks.addTask(4, new EntityAIMoveTowardsRestriction(this, 1.0D));
         this.tasks.addTask(5, new EntityAIMoveThroughVillage(this, 1.0D, false));
         this.tasks.addTask(6, new EntityAIWander(this, 1.0D));
         this.tasks.addTask(7, new EntityAILookIdle(this));
         this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true));
-        targetTasks.addTask(2,new EntityAINearestAttackableTarget<EntityPlayer>(this,EntityPlayer.class,true));
+        this.targetTasks.addTask(2,new EntityAINearestAttackableTarget<EntityPlayer>(this,EntityPlayer.class,true));
     }
 
     @Override
@@ -50,6 +53,9 @@ public class EntitySkeletonCrawling extends EntityMob
     @Override
     public void writeEntityToNBT(NBTTagCompound compound) {
         compound.setByte(TYPE,getSkeletonVariation());
+        //compound.setString(TYPE1, "TEST");
+
+        //Logger.info("TEST1: i have the tag", TYPE1);
         super.writeEntityToNBT(compound);
     }
 
@@ -57,6 +63,7 @@ public class EntitySkeletonCrawling extends EntityMob
     public void readFromNBT(NBTTagCompound compound) {
         super.readFromNBT(compound);
         dataManager.set(skeletonVariation,compound.getByte(TYPE));
+        //Logger.info("TEST2: i have the tag", TYPE1);
     }
 
     public byte getSkeletonVariation()

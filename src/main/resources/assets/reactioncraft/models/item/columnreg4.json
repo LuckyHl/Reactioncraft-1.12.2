@@ -1,6 +1,6 @@
 {
   "parent":"reactioncraft:block/column",
   "textures":{
-    "all": "reactioncraft:blocks/darkbluesymbol2"
+    "all": "blocks/cobblestone"
   }
 }

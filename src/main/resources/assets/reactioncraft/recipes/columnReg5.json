@@ -7,12 +7,12 @@
     ],
     "result": {
         "item": "reactioncraft:columnReg",
-        "count": 1,
-        "data": 5
+        "count": 3,
+        "data": 6
     },
     "key": {
         "X": {
-            "item": "minecraft:gold_block",
+            "item": "minecraft:stone",
             "data": 0
         },
         "Y": {

@@ -18,7 +18,8 @@ public class ItemPieceNet extends ItemBase
     }
 
     @Override
-    public void addInformation(ItemStack itemStack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+    public void addInformation(ItemStack itemStack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) 
+    {
         if (itemStack.getTagCompound() != null)
         {
             list.add("Level: " + itemStack.getTagCompound().getInteger("str2"));

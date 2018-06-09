@@ -7,13 +7,13 @@
     ],
     "result": {
         "item": "reactioncraft:columnReg",
-        "count": 1,
+        "count": 3,
         "data": 2
     },
     "key": {
         "X": {
-            "item": "reactioncraft:bloodstonebricks",
-            "data": 0
+            "item": "reactioncraft:desertblocks",
+            "data": 6
         },
         "Y": {
             "type": "forge:ore_dict",

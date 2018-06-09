@@ -14,6 +14,7 @@ import net.minecraft.inventory.*;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
@@ -342,58 +343,14 @@ public class TileEntityFreezer extends TileEntityLockable implements ITickable, 
         }
     }
 
-    /**
-     * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
-     * fuel
-     */
     public static int getItemBurnTime(ItemStack stack)
     {
-        if (stack == null)
-        {
-            return 0;
-        }
-        else
-        {
-            Item item = stack.getItem();
-
-            if (item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.AIR)
-            {
-                Block block = Block.getBlockFromItem(item);
-
-                if (block == Blocks.WOODEN_SLAB)
-                {
-                    return 150;
-                }
-
-                if (block.getDefaultState().getMaterial() == Material.WOOD)
-                {
-                    return 300;
-                }
-
-                if (block == Blocks.COAL_BLOCK)
-                {
-                    return 16000;
-                }
-            }
-
-            if (item instanceof ItemTool && "WOOD".equals(((ItemTool)item).getToolMaterialName())) return 200;
-            if (item instanceof ItemSword && "WOOD".equals(((ItemSword)item).getToolMaterialName())) return 200;
-            if (item instanceof ItemHoe && "WOOD".equals(((ItemHoe)item).getMaterialName())) return 200;
-            if (item == Items.STICK) return 100;
-            if (item == Items.COAL) return 1600;
-            if (item == Items.LAVA_BUCKET) return 20000;
-            if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
-            if (item == Items.BLAZE_ROD) return 2400;
-            return net.minecraftforge.fml.common.registry.GameRegistry.getFuelValue(stack);
-        }
+        return TileEntityFurnace.getItemBurnTime(stack);
     }
 
     public static boolean isItemFuel(ItemStack stack)
     {
-        /**
-         * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
-         * fuel
-         */
+
         return getItemBurnTime(stack) > 0;
     }
 

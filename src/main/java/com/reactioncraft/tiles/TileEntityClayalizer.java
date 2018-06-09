@@ -1,11 +1,23 @@
 package com.reactioncraft.tiles;
 
-import com.reactioncraft.ItemHandler;
 import com.reactioncraft.api.ClayalizerRecipes;
+import com.reactioncraft.api.FreezerRecipes;
 import com.reactioncraft.itemhandlers.ClaylizerItemHandler;
 import com.reactioncraft.registration.instances.BlockIndex;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemBoat;
+import net.minecraft.item.ItemDoor;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumFacing;
@@ -45,7 +57,7 @@ public class TileEntityClayalizer extends TileEntityBase implements ITickable
      */
     public String getName()
     {
-        return this.hasCustomName() ? this.customName : "container.furnace";
+        return this.hasCustomName() ? this.customName : "Freezer";
     }
 
     /**
@@ -177,47 +189,28 @@ public class TileEntityClayalizer extends TileEntityBase implements ITickable
         return super.receiveClientEvent(id, type);
     }
 
-
-//    /**
-//     * Turn one item from the furnace source stack into the appropriate smelted item in the furnace result stack
-//     */
-//    public void smeltItem()
-//    {
-//        if (this.canSmelt())
-//        {
-//            ItemStack itemstack = FreezerRecipes.instance().getSmeltingResult(this.itemStacks.get(0));
-//            ItemStack two= itemStacks.get(2);
-//            if (two.isEmpty())
-//            {
-//                itemStacks.set(2,itemstack.copy());
-//            }
-//            else if (two.getItem() == itemstack.getItem())
-//            {
-//                two.setCount(two.getCount()+itemstack.getCount());// Forge BugFix: Results may have multiple items
-//            }
-//            ItemStack zero= itemStacks.get(0);
-//            if (zero.getItem() == Item.getItemFromBlock(Blocks.SPONGE) && zero.getMetadata() == 1 && !this.itemStacks.get(1).isEmpty() && this.itemStacks.get(1).getItem() == Items.BUCKET)
-//            {
-//                itemStacks.set(1,new ItemStack(Items.WATER_BUCKET));
-//            }
-//
-//            zero.shrink(1);
-//
-//            if (zero.getCount() <= 0)
-//            {
-//                itemStacks.set(0,ItemStack.EMPTY);
-//            }
-//        }
-//    }
-
+    
     /**
      * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
      * fuel
      */
     public static int getItemBurnTime(ItemStack stack)
     {
-        return TileEntityFurnace.getItemBurnTime(stack);
+    	int burnTime = net.minecraftforge.event.ForgeEventFactory.getItemBurnTime(stack);
+        if (stack.isEmpty())
+        {
+            return 0;
+        }
+        else
+        {
+            if (burnTime >= 0) return burnTime;
+            Item item = stack.getItem();
+
+            if (item == Items.WATER_BUCKET) return 1600;
+        }
+		return burnTime;
     }
+
 
     public static boolean isItemFuel(ItemStack stack)
     {

@@ -1,8 +1,11 @@
 package com.reactioncraft.api;
 
 import com.google.common.collect.Maps;
-import com.reactioncraft.Tools;
 import com.reactioncraft.core.Logger;
+import com.reactioncraft.items.tools.Tools;
+import com.reactioncraft.registration.instances.BlockIndex;
+import com.reactioncraft.registration.instances.ItemIndex;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -30,6 +33,7 @@ public class BrickOvenRecipes
     {
         this.addSmelting(Items.CLAY_BALL, new ItemStack(Items.BRICK), 0.3F);
         this.addSmeltingRecipeForBlock(Blocks.CLAY, new ItemStack(Blocks.HARDENED_CLAY), 0.35F);
+        this.addSmelting(ItemIndex.sandStonePaste, new ItemStack(BlockIndex.desertBlocks, 2, 7), 0.20F);
     }
 
     /**
@@ -53,7 +57,7 @@ public class BrickOvenRecipes
      */
     public void addSmeltingRecipe(ItemStack input, ItemStack stack, float experience)
     {
-        if (!getSmeltingResult(input).isEmpty()) { Logger.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
+        //if (!getSmeltingResult(input).isEmpty()) { Logger.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
         this.smeltingList.put(input, stack);
         this.experienceList.put(stack, experience);
     }

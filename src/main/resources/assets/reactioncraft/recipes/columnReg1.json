@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X ",
+        "XY",
+        "X "
+    ],
+    "result": {
+        "item": "reactioncraft:columnReg",
+        "count": 1,
+        "data": 2
+    },
+    "key": {
+        "X": {
+            "item": "reactioncraft:desertblocks",
+            "data": 8
+        },
+        "Y": {
+            "type": "forge:ore_dict",
+            "ore": "chisel"
+        }
+    }
+}

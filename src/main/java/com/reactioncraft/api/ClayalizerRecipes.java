@@ -1,7 +1,10 @@
 package com.reactioncraft.api;
 
 import com.google.common.collect.Maps;
-import com.reactioncraft.Tools;
+import com.reactioncraft.items.tools.Tools;
+import com.reactioncraft.registration.instances.BlockIndex;
+import com.reactioncraft.registration.instances.ItemIndex;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -27,7 +30,7 @@ public class ClayalizerRecipes
     private ClayalizerRecipes()
     {
         //test recipe
-        addSmeltingRecipeForBlock(Blocks.STONE,new ItemStack(Blocks.MELON_BLOCK),0.3f);
+        addSmeltingRecipeForBlock(BlockIndex.dark_sand, new ItemStack(ItemIndex.sandStonePaste, 0, 4),0.3f);
     }
 
     /**
@@ -51,7 +54,7 @@ public class ClayalizerRecipes
      */
     public void addSmeltingRecipe(ItemStack input, ItemStack stack, float experience)
     {
-        if (!getSmeltingResult(input).isEmpty()) { net.minecraftforge.fml.common.FMLLog.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
+        //if (!getSmeltingResult(input).isEmpty()) { net.minecraftforge.fml.common.FMLLog.info("Ignored smelting recipe with conflicting input: " + input + " = " + stack); return; }
         this.smeltingList.put(input, stack);
         this.experienceList.put(stack, Float.valueOf(experience));
     }
@@ -71,6 +74,4 @@ public class ClayalizerRecipes
 
         return ItemStack.EMPTY;
     }
-
-
 }

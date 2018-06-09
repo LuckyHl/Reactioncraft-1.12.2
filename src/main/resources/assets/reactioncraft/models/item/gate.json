@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "reactioncraft:blocks/gate_side",
+		"down": "reactioncraft:blocks/gate_bottom",
+		"particle": "reactioncraft:blocks/gate_side",
+		"north": "reactioncraft:blocks/gate_side",
+		"east": "reactioncraft:blocks/gate_side",
+		"south": "reactioncraft:blocks/gate_side",
+		"west": "reactioncraft:blocks/gate_side"
+	}
+}

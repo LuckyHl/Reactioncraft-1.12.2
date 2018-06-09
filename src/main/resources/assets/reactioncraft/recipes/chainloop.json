@@ -1,12 +1,22 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "type": "forge:ore_dict",
-            "ore": "ingotIron"
-        }
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "Y",
+        "X"
     ],
     "result": {
-        "item": "reactioncraft:chainloop"
+        "item": "reactioncraft:chainloop",
+        "count": 1,
+        "data": 0
+    },
+    "key": {
+        "X": {
+            "item": "reactioncraft:superheatedironingot",
+            "data": 0
+        },
+        "Y": {
+            "type": "forge:ore_dict",
+            "ore": "hammer"
+        }
     }
 }

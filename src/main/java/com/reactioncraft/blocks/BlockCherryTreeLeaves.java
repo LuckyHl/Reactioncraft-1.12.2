@@ -2,11 +2,12 @@ package com.reactioncraft.blocks;
 
 import com.google.common.collect.Lists;
 import com.reactioncraft.Reactioncraft;
-import net.minecraft.block.BlockLeaves;
-import net.minecraft.block.BlockPlanks;
+import com.reactioncraft.registration.instances.BlockIndex;
+import net.minecraft.block.*;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -15,6 +16,7 @@ import net.minecraft.world.IBlockAccess;
 
 import javax.annotation.Nonnull;
 import java.util.List;
+import java.util.Random;
 
 public class BlockCherryTreeLeaves extends BlockLeaves
 {
@@ -63,6 +65,20 @@ public class BlockCherryTreeLeaves extends BlockLeaves
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
+    
+    /**
+     * Returns the quantity of items to drop on block destruction.
+     */
+    public int quantityDropped(Random random)
+    {
+        return random.nextInt(20) == 0 ? 1 : 0;
+    }
 
-
+    /**
+     * Get the Item that this Block should drop when harvested.
+     */
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return Item.getItemFromBlock(BlockIndex.cherryTreeSapling);
+    }
 }

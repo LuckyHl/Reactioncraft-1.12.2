@@ -18,10 +18,10 @@ public class OreDictionaryRegistry
         OreDictionary.registerOre("ingotBronze", new ItemStack(ItemIndex.ingotBronze, 1, 0));
         OreDictionary.registerOre("ingotCopper", new ItemStack(ItemIndex.ingotCopper, 1, 0));
         OreDictionary.registerOre("gemRuby", ItemIndex.ruby);
+        OreDictionary.registerOre("oreDesertCoal", new ItemStack(BlockIndex.desertBlocks, 1, 0));
         OreDictionary.registerOre("DarkCobble", new ItemStack(BlockIndex.desertBlocks, 1, 1));
-//        OreDictionary.registerOre("DarkStone", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 2));
-//       OreDictionary.registerOre("oreDesertGold", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 10));
-       OreDictionary.registerOre("oreDesertGold", new ItemStack(BlockIndex.desertBlocks, 1, 10));
+        OreDictionary.registerOre("DarkStone",  new ItemStack(BlockIndex.desertBlocks, 1, 7));
+        OreDictionary.registerOre("oreDesertGold", new ItemStack(BlockIndex.desertBlocks, 1, 10));
         OreDictionary.registerOre("BloodstoneBrick", new ItemStack(BlockIndex.bloodstonebricks));
         OreDictionary.registerOre("darkStoneCarved", new ItemStack(BlockIndex.desertBlocks, 1, 7));
         OreDictionary.registerOre("darkstonebrick", new ItemStack(BlockIndex.desertBlocks, 1, 3));
@@ -50,7 +50,7 @@ public class OreDictionaryRegistry
         OreDictionary.registerOre("shardDragonstone", new ItemStack(ItemIndex.dragonstoneshard));
         OreDictionary.registerOre("gemDragonstone", new ItemStack(ItemIndex.gemdragonstone));
         OreDictionary.registerOre("dyePurple", new ItemStack(ItemIndex.dragonstoneshard));
-        OreDictionary.registerOre("oreSilver", new ItemStack(BlockIndex.surfaceOres, 1, 4));
+        //OreDictionary.registerOre("oreSilver", new ItemStack(BlockIndex.surfaceOres, 1, 4));
         OreDictionary.registerOre("bones", new ItemStack(ItemIndex.bones));
         OreDictionary.registerOre("wrappedCorn", new ItemStack(ItemIndex.wrappedcorn));
         
@@ -62,7 +62,7 @@ public class OreDictionaryRegistry
         OreDictionary.registerOre("oreNetherGoldOre", new ItemStack(BlockIndex.netherOres, 1, 3));
         
         //For IC2 Macerator
-        OreDictionary.registerOre("oreGold", new ItemStack(BlockIndex.netherOres, 1, 3));
-        OreDictionary.registerOre("oreGold", new ItemStack(BlockIndex.surfaceOres, 1, 3));
+        //OreDictionary.registerOre("oreGold", new ItemStack(BlockIndex.netherOres, 1, 3));
+        //OreDictionary.registerOre("oreGold", new ItemStack(BlockIndex.surfaceOres, 1, 3));
     }
 }

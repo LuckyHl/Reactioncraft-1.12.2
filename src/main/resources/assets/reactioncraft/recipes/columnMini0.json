@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XY"
+    ],
+    "result": {
+        "item": "reactioncraft:columnMini",
+        "count": 2,
+        "data": 0
+    },
+    "key": {
+        "X": {
+            "item": "reactioncraft:columnReg",
+            "data": 0
+        },
+        "Y": {
+            "type": "forge:ore_dict",
+            "ore": "chisel"
+        }
+    }
+}

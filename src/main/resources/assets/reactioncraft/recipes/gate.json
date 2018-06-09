@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "XAX",
+        "#B#"
+    ],
+    "result": {
+        "item": "reactioncraft:gate",
+        "data" : 0
+    },
+    "key": {
+        "#": {
+            "item": "minecraft:cobblestone",
+            "data": 0
+        },
+        "X": {
+            "item": "minecraft:iron_ingot",
+            "data": 0
+        },
+        "B": {
+            "item": "minecraft:dropper",
+            "data": 0
+        },
+        "A": {
+            "item": "minecraft:redstone",
+            "data": 0
+        }
+    }
+}
