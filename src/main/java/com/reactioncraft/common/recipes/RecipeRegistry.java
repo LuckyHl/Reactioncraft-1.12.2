@@ -54,12 +54,17 @@ public class RecipeRegistry
 			GameRegistry.addShapedRecipe(new ResourceLocation(Reactioncraft.MODID,"net"+i),null,hiltIs,hiltRec);
 			GameRegistry.addShapedRecipe(new ResourceLocation(Reactioncraft.MODID,"hilt"+i),null,netIs,netRec);
 		}
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
 		
 		//GameRegistry.addShapelessRecipe(new ItemStack(ItemIndex.complete_net), new Object[] {ItemIndex.hilt, ItemIndex.net});
 		//Object[] netREC = new Object[] {" X", "I ", 'I', ItemIndex.hilt, 'X', ItemIndex.net};
 		//GameRegistry.addShapedRecipe(new ResourceLocation(Reactioncraft.MODID,"complete_net"),null,null, netREC);
 	}
 	
+=======
+	}
+
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 	public static void loadRecipesforVanilla()
 	{
 		GameRegistry.addSmelting(ItemIndex.iceBucket, new ItemStack(Items.WATER_BUCKET, 1), 0.5F);
@@ -90,11 +95,24 @@ public class RecipeRegistry
 		GameRegistry.addSmelting(BlockIndex.dark_sand, new ItemStack(Blocks.GLASS), 0.5F);
 		GameRegistry.addSmelting(ItemIndex.goldrod, new ItemStack(Items.GOLD_INGOT, 2), 0.5F);
 		GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ItemIndex.obsidianingot), 0.5F);
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
+=======
+
+		//NOTICE
+//	d	CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.bloodstonebricks, 4, 0), new Object[] {"oreBloodstone", "oreBloodstone", "oreBloodstone", "oreBloodstone"}));
+
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 	}
 	
 	public static void oreSmelting()
 	{
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 2), new ItemStack(Items.GOLD_INGOT), 0.5F);
+=======
+
+		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 1), new ItemStack(ItemIndex.uncutLBGem), 0.5F);
+		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 2), new ItemStack(ItemIndex.uncutDBGem), 0.5F);
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 3), new ItemStack(Items.GOLD_INGOT), 0.5F);
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 4), new ItemStack(ItemIndex.ingotSilver), 0.5F);
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.surfaceOres, 1, 5),new ItemStack(ItemIndex.ingotCopper),0.5F);
@@ -111,9 +129,15 @@ public class RecipeRegistry
 	
 	public static void loadORES()
 	{
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.endOres,1,1),new ItemStack(ItemIndex.meltedventinite),0.5F);
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.endOres,1,0),new ItemStack(ItemIndex.meltedwizimite),0.5F);
         GameRegistry.addSmelting(new ItemStack(BlockIndex.netherOres),new ItemStack(ItemIndex.bloodstoneclump),0.5F);
+=======
+		GameRegistry.addSmelting(new ItemStack(BlockIndex.endOres,1,1),new ItemStack(ItemIndex.meltedventinite),0.5f);
+		GameRegistry.addSmelting(new ItemStack(BlockIndex.endOres,1,0),new ItemStack(ItemIndex.meltedwizimite),0.5f);
+        GameRegistry.addSmelting(new ItemStack(BlockIndex.netherOres),new ItemStack(ItemIndex.bloodstoneclump),0.5f);
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 		GameRegistry.addSmelting(ItemIndex.bloodstonedust, new ItemStack(ItemIndex.ingotbloodstone), 0.5F);
 		GameRegistry.addSmelting(ItemIndex.bloodstoneclump, new ItemStack(ItemIndex.ingotbloodstone), 0.5F);
 		GameRegistry.addSmelting(ItemIndex.irondust, new ItemStack(ItemIndex.superheatedironingot, 2, 0), 0.5F);
@@ -123,6 +147,7 @@ public class RecipeRegistry
 
 	public static void loadDesertRecipes()
 	{
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.desertBlocks,1,3),new ItemStack(Items.GOLD_INGOT),0.5F);
 		GameRegistry.addSmelting(new ItemStack(BlockIndex.desertBlocks,1,1), new ItemStack(BlockIndex.desertBlocks, 1, 7), 0.1F);
 
@@ -130,14 +155,17 @@ public class RecipeRegistry
 		GameRegistry.addSmelting(BlockIndex.redCactus,   new ItemStack(Items.DYE, 1, 1), 0.15F);
 		GameRegistry.addSmelting(BlockIndex.greenCactus, new ItemStack(Items.DYE, 1, 2), 0.15F);
 	}
+=======
+		GameRegistry.addSmelting(new ItemStack(BlockIndex.desertBlocks,1,1), new ItemStack(BlockIndex.desertBlocks, 1, 2), 0.1F);
+		GameRegistry.addSmelting(BlockIndex.cherrywood, new ItemStack(Items.COAL, 1, 1), 0.5F);
+		GameRegistry.addSmelting(BlockIndex.redCactus, new ItemStack(Items.DYE, 1, 2), 0.15F);
+		GameRegistry.addSmelting(BlockIndex.greenCactus, new ItemStack(Items.DYE, 1, 2), 0.15F);
+}
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 
 	public static void loadCurrency()
 	{
-//	done	GameRegistry.addRecipe(new ItemStack(IntegratedItems.Bag, 1), new Object[] {"TTT", "T T", "TTT", 'T', IntegratedItems.Straw});
-//	done	GameRegistry.addRecipe(new ItemStack(IntegratedItems.Sack, 1), new Object[] {"TTT", "TTT", 'T', IntegratedItems.Straw});
-//	done	GameRegistry.addRecipe(new ItemStack(IntegratedItems.KinglyChest, 1), new Object[] {"T T", "TTT", "TTT", 'T', Blocks.WOOL});
-//	done	GameRegistry.addRecipe(new ItemStack(IntegratedItems.KinglyLegs, 1), new Object[] {"TTT", "T T", "T T", 'T',  Blocks.WOOL});
-//	done	GameRegistry.addRecipe(new ItemStack(IntegratedItems.KinglyBoots, 1), new Object[] {"T T", "T T", 'T',        Blocks.WOOL});
+
 //
 //		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.Metadatacoin, 2, 0), new Object[] {new ItemStack(IntegratedItems.moltencopper), new ItemStack(IntegratedItems.CoinMould, 1, Reactioncraft.WILDCARD_VALUE)});
 //		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.Metadatacoin, 2, 1), new Object[] {new ItemStack(IntegratedItems.moltenbronze), new ItemStack(IntegratedItems.CoinMould, 1, Reactioncraft.WILDCARD_VALUE)});
@@ -161,6 +189,7 @@ public class RecipeRegistry
 	@Nullable
 	public static void forestry()
 	{
+<<<<<<< HEAD:src/main/java/com/reactioncraft/common/recipes/RecipeRegistry.java
 		//Corn 
 		RecipeManagers.squeezerManager.addRecipe(10, new ItemStack(ItemIndex.rawcorn),  FluidRegistry.getFluidStack("seed.oil", 25));
 		RecipeManagers.squeezerManager.addRecipe(10, new ItemStack(ItemIndex.cornSeed), FluidRegistry.getFluidStack("seed.oil", 10));
@@ -210,6 +239,10 @@ public class RecipeRegistry
 		
 		//Desert Coal to Coal Item
 		//Recipes.macerator.addRecipe(Recipes.inputFactory.forOreDict("oreDesertCoal", 1), null, false, new ItemStack[] { new ItemStack(Items.COAL, 2) });
+=======
+		//GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.enderportal, 1), new Object[] {"I I", "XXX", 'I', IntegratedItems.blackdiamond, 'X', new ItemStack(IntegratedBlocks.endOres, 1, 2)});
+		GameRegistry.addSmelting(Blocks.SPONGE, new ItemStack(BlockIndex.newSponge), 0.1F);
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e:src/main/java/com/reactioncraft/registration/RecipeRegistry.java
 
 		//DarkCobble /DarkStone to DarkSand
 		Recipes.macerator.addRecipe(Recipes.inputFactory.forOreDict("DarkStone", 1)    , null, false, new ItemStack[] { new ItemStack(BlockIndex.dark_sand, 1)});

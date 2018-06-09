@@ -1,15 +1,15 @@
-package com.reactioncraft.blocks.ores;
+package com.reactioncraft.common;
 
 import net.minecraft.util.IStringSerializable;
 
 public enum EnumSurfaceOres implements IStringSerializable
 {
-    DESERT_COAL(0, 0,   "one1",       "0"),
-    DARK_BLUE_GEM(1, 1,   "one2",       "1"),
-    LIGHT_BLUE_GEM(2, 2,   "one3",       "2"),
-    DESERT_GOLD(3, 3,   "two1",       "3"),
-    SILVER(4, 4,   "two2", 	   "4"),
-    COPPER(5, 5,   "two3",       "5");
+    DESERT_COAL(0, 0,   "0",       "0"),
+    DARK_BLUE_GEM(1, 1,   "1",       "1"),
+    LIGHT_BLUE_GEM(2, 2,   "2",       "2"),
+    DESERT_GOLD(3, 3,   "3",       "3"),
+    SILVER(4, 4,   "4", 	   "4"),
+    COPPER(5, 5,   "5",       "5");
 //    three1		(6, 6,   "three1",     "three1"),
 //    three2		(7, 7,   "three2",     "three2"),
 //    three3		(8, 8,   "three3",     "three3"),

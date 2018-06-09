@@ -4,19 +4,19 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumHieroGlyphs implements IStringSerializable
 {
-    BROWN1(0, 12,   "one1",       "0"),
-    BROWN2(1, 11,   "one2",       "1"),
-    BROWN3(2, 10,   "one3",       "2"),
-    BLUE1(3, 9,   "two1",       "3"),
-    BLUE2(4, 8,   "two2", 	   "4"),
-    BLUE3(5, 7,   "two3",       "5"),
-    CYAN1(6, 6,   "three1",     "6"),
-    CYAN2(7,5,   "three2",     "7"),
-    CYAN3(8, 4,   "three3",     "8"),
-    GOLD1(9, 3, 	 "four1",      "9"),
-    GOLD2(10, 2, "four2",      "10"),
-    GOLD3(11, 1, "four3",      "11"),
-    WEATHERED(12, 0, "five1",      "12");
+    BROWN1(0, 12,   "0",       "0"),
+    BROWN2(1, 11,   "1",       "1"),
+    BROWN3(2, 10,   "2",       "2"),
+    BLUE1(3, 9,   "3",       "3"),
+    BLUE2(4, 8,   "4", 	   "4"),
+    BLUE3(5, 7,   "5",       "5"),
+    CYAN1(6, 6,   "6",     "6"),
+    CYAN2(7,5,   "7",     "7"),
+    CYAN3(8, 4,   "8",     "8"),
+    GOLD1(9, 3, 	 "9",      "9"),
+    GOLD2(10, 2, "10",      "10"),
+    GOLD3(11, 1, "11",      "11"),
+    WEATHERED(12, 0, "12",      "12");
 
     private static final EnumHieroGlyphs[] META_LOOKUP = new EnumHieroGlyphs[values().length];
     private static final EnumHieroGlyphs[] DYE_DMG_LOOKUP = new EnumHieroGlyphs[values().length];

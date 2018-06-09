@@ -83,6 +83,7 @@ public class BlockDesertMulti extends BlockBase implements MetadataArray
 		return this.getDefaultState().withProperty(TYPE, EnumDesertBlocks.byMetadata(meta));
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Convert the BlockState into the correct metadata value
 	 */
@@ -90,6 +91,8 @@ public class BlockDesertMulti extends BlockBase implements MetadataArray
 	{
 		return (state.getValue(TYPE)).getMetadata();
 	}
+=======
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
 
 
 	protected BlockStateContainer createBlockState()

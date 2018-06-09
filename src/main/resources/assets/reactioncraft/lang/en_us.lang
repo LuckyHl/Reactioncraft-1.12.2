@@ -73,6 +73,7 @@ tile.reactioncraft.bloodstonebricks.name=Bloodstone Bricks
 tile.reactioncraft.cherry_leaves.name=Cherry Leaves
 tile.reactioncraft.hive.name=Hive
 tile.reactioncraft.cherry_wood.name=Cherry Wood
+<<<<<<< HEAD
 tile.reactioncraft.brickovenidle.name=Brick Oven
 tile.reactioncraft.clayalizeridle.name=Clayalizer
 tile.reactioncraft.freezeridle.name=Freezer
@@ -88,6 +89,23 @@ tile.reactioncraft.columnReg.8.name=Gold Column
 tile.reactioncraft.columnReg.9.name=Brick Column
 tile.reactioncraft.columnReg.10.name=Stone Slab Column
 tile.reactioncraft.columnReg.11.name=Bloodstone Brick Column
+=======
+tile.reactioncraft.brickoven.name=Brick Oven
+tile.reactioncraft.claylizer.name=Clayalizer
+tile.reactioncraft.freezer.name=Freezer
+tile.reactioncraft.columnReg.0.name=Brown Column 1
+tile.reactioncraft.columnReg.1.name=Brown Column 2
+tile.reactioncraft.columnReg.2.name=Brown Column 3
+tile.reactioncraft.columnReg.3.name=Blue Column 1
+tile.reactioncraft.columnReg.4.name=Blue Column 2
+tile.reactioncraft.columnReg.5.name=Blue Column 3
+tile.reactioncraft.columnReg.6.name=Cyan Column 1
+tile.reactioncraft.columnReg.7.name=Cyan Column 2
+tile.reactioncraft.columnReg.8.name=Cyan Column 3
+tile.reactioncraft.columnReg.9.name=Gold Column 1
+tile.reactioncraft.columnReg.10.name=Gold Column 2
+tile.reactioncraft.columnReg.11.name=Gold Column 3
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
 tile.reactioncraft.columnReg.12.name=Weathered Column
 tile.reactioncraft.chain_ladder.name=Chain Ladder
 tile.reactioncraft.cactus1.name=Green Cactus
@@ -109,6 +127,7 @@ tile.reactioncraft.ColumnMini.9.name=Brick Column
 tile.reactioncraft.ColumnMini.10.name=Stone Slab Column
 tile.reactioncraft.ColumnMini.11.name=Bloodstone Brick Column
 tile.reactioncraft.ColumnMini.12.name=Weathered Mini Column
+tile.reactioncraft.end_portal_frame.name=RC End Portal Frame
 
 #Items
 item.reactioncraft.caught.name=Caught
@@ -244,10 +263,14 @@ item.reactioncraft.raw_horse.name=Raw Horse
 item.reactioncraft.cooked_horse.name=Cooked Horse
 item.reactioncraft.chicken_head.name=Chicken Head
 
+<<<<<<< HEAD
 item.reactioncraft.miningHelmLit.name=Lit Mining Helmet
 item.reactioncraft.miningHelmUnlit.name=Mining Helmet
 
 item.reactioncraft.rcendereye.name=RC Ender Eye
+=======
+item.reactioncraft.end_eye.name=RC Ender Eye
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
 item.reactioncraft.iron_shavings.name=Iron Shavings
 item.reactioncraft.stalks_item_base.name=Stalks
 item.reactioncraft.darkbluecrown.name=Dark-blue Crown

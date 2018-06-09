@@ -1,8 +1,16 @@
 package com.reactioncraft.registration.instances;
 
 import com.reactioncraft.blocks.*;
+<<<<<<< HEAD
 import com.reactioncraft.blocks.machines.*;
 import net.minecraft.block.*;
+=======
+import com.reactioncraft.blocks.machines.BlockBrickOven;
+import com.reactioncraft.blocks.machines.BlockClayalizer;
+import com.reactioncraft.blocks.machines.BlockFreezer;
+import net.minecraft.block.BlockBush;
+import net.minecraft.block.BlockEndPortal;
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
 
 
 public class BlockIndex
@@ -26,8 +34,7 @@ public class BlockIndex
     public static BlockCherryTreeLog cherrywood;
     public static BlockBase snowBlockBase;
     public static BlockChainLadder chainladder;
-    public static BlockBase enderportal;
-    public static BlockBase enderportalp;
+    public static BlockEndPortalFrame2 enderportalframe;
     public static BlockBase Bookcasechest;
     public static BlockBaseDoor woodenBookcase;
     public static BlockBaseDoor ironBookcasedoor;
@@ -39,12 +46,11 @@ public class BlockIndex
     public static BlockBush greenCactus;
     public static BlockCherryTreeLeaves cherryTreeLeaves;
     public static BlockCherryTreeSapling cherryTreeSapling;
-    public static BlockFreezer freezerActive;
-    public static BlockFreezer freezerIdle;
-    public static BlockBrickOven brickOvenActive;
-    public static BlockBrickOven brickOvenIdle;
-    public static BlockClayalizer clayalizerIdle;
-    public static BlockClayalizer clayalizerActive;
+    public static BlockFreezer freezer;
+//    public static BlockBrickOven brickOvenActive;
+    public static BlockBrickOven brickOven;
+    public static BlockClayalizer claylizer;
+//    public static BlockClayalizer clayalizerActive;
     public static BlockHive rchive;
     public static BlockAncientPlant ancientPlant;
     public static BlockBase sugarcaneBlockBase;

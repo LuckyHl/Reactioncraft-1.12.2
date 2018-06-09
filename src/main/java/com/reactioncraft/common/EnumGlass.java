@@ -4,22 +4,22 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumGlass implements IStringSerializable
 {
-    one1		(0, 0,   "one1",       "one1"),
-    one2		(1, 1,   "one2",       "one2"),
-    one3		(2, 2,   "one3",       "one3"),
-    two1	    (3, 3,   "two1",       "two1"),
-    two2		(4, 4,   "two2", 	   "two2"),
-    two3		(5, 5,   "two3",       "two3"),
-    three1		(6, 6,   "three1",     "three1"),
-    three2		(7, 7,   "three2",     "three2"),
-    three3		(8, 8,   "three3",     "three3"),
-    four1		(9, 9, 	 "four1",      "four1"),
-    four2		(10, 10, "four2",      "four2"),
-    four3		(11, 11, "four3",      "four3"),
-    five1       (12, 12, "five1",      "five1"),
-    five2		(13, 13, "five2",      "five2"),
-    five3		(14, 14, "five3",      "five3"),
-    six1		(15, 15, "six1",       "six1");
+    WHITE(0, 0,   "0", "one1"),
+    ORANGE(1, 1,   "1", "one2"),
+    MAGENTA(2, 2,   "2",  "one3"),
+    LIGHT_BLUE(3, 3,   "3", "two1"),
+    YELLOW(4, 4,   "4", "two2"),
+    LIME(5, 5,   "5",   "two3"),
+    PINK(6, 6,   "6",  "three1"),
+    GRAY(7, 7,   "7",   "three2"),
+    SILVER(8, 8,   "8", "three3"),
+    CYAN(9, 9, 	 "9",  "four1"),
+    PURPLE(10, 10, "10",   "four2"),
+    BLUE(11, 11, "11",  "four3"),
+    BROWN(12, 12, "12",  "five1"),
+    GREEN(13, 13, "13",  "five2"),
+    RED	(14, 14, "14","five3"),
+    BLACK(15, 15, "15","six1");
 
     private static final EnumGlass[] META_LOOKUP = new EnumGlass[values().length];
     private static final EnumGlass[] DYE_DMG_LOOKUP = new EnumGlass[values().length];

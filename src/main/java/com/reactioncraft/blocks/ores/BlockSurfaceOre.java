@@ -6,8 +6,12 @@ import java.util.Random;
 import com.reactioncraft.Reactioncraft;
 import com.reactioncraft.blocks.BlockBase;
 import com.reactioncraft.blocks.MetadataArray;
+<<<<<<< HEAD
 import com.reactioncraft.registration.instances.BlockIndex;
 
+=======
+import com.reactioncraft.common.EnumSurfaceOres;
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;

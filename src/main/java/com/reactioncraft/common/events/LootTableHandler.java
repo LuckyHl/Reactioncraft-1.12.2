@@ -19,6 +19,7 @@ public class LootTableHandler
     @SubscribeEvent
     public void addLoot(LootTableLoadEvent lootTableLoadEvent)
     {
+<<<<<<< HEAD
 		//ItemStacks
     	LootEntry coin_mould=createDefaultLootEntryMeta(ItemIndex.coinMould);
     	LootEntry ingot_mould_entry=createDefaultLootEntryMeta(ItemIndex.ingotmould);
@@ -26,6 +27,14 @@ public class LootTableHandler
     	//Items
         LootEntry bronze_ingot=createDefaultLootEntry(ItemIndex.ingotBronze);
         LootEntry corn=createDefaultLootEntry(ItemIndex.rawcorn);
+=======
+        LootEntry ingot_mould_entry=createMetaLootEntry(ItemIndex.ingotmould,15);
+        LootEntry coin_mould=createMetaLootEntry(ItemIndex.coinMould,15);
+
+        LootEntry bronze_ingot=createDefaultLootEntry(ItemIndex.ingotBronze);
+
+//            LootEntry mask=createDefaultLootEntry(ItemIndex.mas)
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
         LootEntry ruby=createDefaultLootEntry(ItemIndex.ruby);
         LootEntry ancient_fruit=createDefaultLootEntry(ItemIndex.ancientFruit);
         LootEntry ancient_flower=createDefaultLootEntry(ItemIndex.ancientFlower);
@@ -77,6 +86,12 @@ public class LootTableHandler
         return lootPool;
     }
 
+    private LootEntryItem createMetaLootEntry(Item item,int metadata)
+    {
+        SetDamage damage=new SetDamage(new LootCondition[]{},new RandomValueRange(metadata));
+        SetCount count=new SetCount(new LootCondition[]{},new RandomValueRange(1));
+        return new LootEntryItem(item,5,1,new LootFunction[]{damage,count},new LootCondition[]{},item.getRegistryName().getResourcePath());
+    }
 
     private LootEntryItem createDefaultLootEntry(Item item)
     {

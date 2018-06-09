@@ -9,89 +9,89 @@
     },
     "variants": {
         "type": {
-            "one1": {
+            "0": {
                 "textures": {
                     "end": "blocks/planks_oak",
                     "side": "reactioncraft:blocks/empty"
                 }
             },
-            "one2": {
+            "1": {
                 "textures": {
                     "end": "blocks/planks_oak",
                     "side": "reactioncraft:blocks/web"
                 }
             },
-             "one3": {
+             "2": {
                 "textures": {
                     "end": "blocks/planks_oak",
                    "side": "reactioncraft:blocks/web2"
                 }
             },
-             "two1": {
+             "3": {
                 "textures": {
                     "end": "reactioncraft:blocks/css",
                    "side": "reactioncraft:blocks/scrollcase_empty"
                 }
             },
-             "two2": {
+             "4": {
                 "textures": {
                     "end": "blocks/planks_oak",
                    "side": "reactioncraft:blocks/partialFilledBookcase1"
                 }
             },
-             "two3": {
+             "5": {
                 "textures": {
                     "end": "blocks/planks_oak",
                    "side": "reactioncraft:blocks/partialFilledBookcase2"
                 }
             },
-             "three1": {
+             "6": {
                 "textures": {
                    "end": "blocks/planks_oak",
                    "side": "reactioncraft:blocks/partialFilledBookcase3"
                 }
             },
-          "three2": {
+          "7": {
                 "textures": {
                    "end": "reactioncraft:blocks/css",
                    "side": "reactioncraft:blocks/shelf1"
                 }
             },
-          "three3" : {
+          "8" : {
             "textures": {
                    "end": "reactioncraft:blocks/css",
                    "side": "reactioncraft:blocks/shelf2"
                 }
           },
-          "four1": {
+          "9": {
                 "textures": {
                    "end": "reactioncraft:blocks/css",
                    "side": "reactioncraft:blocks/shelf3"
                 }
             },
-          "four2": {
+          "10": {
                 "textures": {
                    "end": "reactioncraft:blocks/css",
                    "side": "reactioncraft:blocks/shelfemptywebbed"
                 }
             },
-          "four3": {
+          "11": {
             "textures": {
               "end": "reactioncraft:blocks/css",
               "side": "reactioncraft:blocks/shelfwebbed"
             }
           },
 
-          "five1": {
+          "12": {
 
           },
-          "five2" :{
+          "13" :{
 
           },
-          "five3" : {
+          "14" : {
 
           },
-          "six1" : {
+          "15" : {
 
           }
         }

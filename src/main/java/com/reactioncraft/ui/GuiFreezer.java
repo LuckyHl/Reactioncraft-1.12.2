@@ -16,9 +16,9 @@ public class GuiFreezer extends UIContainerBase
     private static final ResourceLocation FURNACE_GUI_TEXTURES = new ResourceLocation(Reactioncraft.MODID,"textures/gui/freezer.png");
     /** The player inventory bound to this GUI. */
     private final InventoryPlayer playerInventory;
-    private final IInventory freezer;
+    private final TileEntityFreezer freezer;
 
-    public GuiFreezer(InventoryPlayer playerInv, IInventory furnaceInv)
+    public GuiFreezer(InventoryPlayer playerInv, TileEntityFreezer furnaceInv)
     {
         super(new ContainerFreezer(playerInv, furnaceInv));
         this.playerInventory = playerInv;
@@ -46,11 +46,9 @@ public class GuiFreezer extends UIContainerBase
         int j = (this.height - this.ySize) / 2;
         this.drawTexturedModalRect(i, j, 0, 0, this.xSize, this.ySize);
 
-        if (TileEntityFreezer.isBurning(this.freezer))
-        {
-            int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(i + 56, j + 36 + 12 - k, 176, 12 - k, 14, k + 1);
-        }
+        int k = this.getBurnLeftScaled(13);
+        this.drawTexturedModalRect(i + 56, j + 36 + 12 - k, 176, 12 - k, 14, k + 1);
+
 
         int l = this.getCookProgressScaled(24);
         this.drawTexturedModalRect(i + 79, j + 34, 176, 14, l + 1, 16);
@@ -58,20 +56,17 @@ public class GuiFreezer extends UIContainerBase
 
     private int getCookProgressScaled(int pixels)
     {
-        int i = this.freezer.getField(2);
-        int j = this.freezer.getField(3);
-        return j != 0 && i != 0 ? i * pixels / j : 0;
+        int i = this.freezer.totalCookTime;
+        int j = TileEntityFreezer.PROCESS_TIME;
+        return i != 0 ? i * pixels / j : 0;
     }
 
     private int getBurnLeftScaled(int pixels)
     {
-        int i = this.freezer.getField(1);
+        int i = this.freezer.currentItemBurnTime;
 
-        if (i == 0)
-        {
-            i = 200;
-        }
+        int fbt=freezer.fuelburntime;
 
-        return this.freezer.getField(0) * pixels / i;
+        return (i!=0 && fbt!=0) ?  i* pixels/fbt : -1;
     }
 }

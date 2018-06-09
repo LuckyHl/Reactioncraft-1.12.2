@@ -2,7 +2,7 @@ package com.reactioncraft.world;
 
 import com.google.common.base.Predicate;
 import com.reactioncraft.blocks.ores.BlockNetherOre;
-import com.reactioncraft.blocks.ores.EnumNetherOres;
+import com.reactioncraft.common.EnumNetherOres;
 import com.reactioncraft.registration.instances.BlockIndex;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockStateMatcher;

@@ -39,53 +39,14 @@ public class ContainerClayalizer extends Container
     public void addListener(IContainerListener listener)
     {
         super.addListener(listener);
-//        listener.sendAllWindowProperties(this, this.clayliser);
     }
 
     /**
      * Looks for changes made in the container, sends them to every listener.
      */
-    public void detectAndSendChanges()
-    {
+    public void detectAndSendChanges() {
         super.detectAndSendChanges();
-
-//        for (int i = 0; i < this.listeners.size(); ++i)
-//        {
-//            IContainerListener icontainerlistener = this.listeners.get(i);
-//
-//            if (this.cookTime != this.clayliser.getField(2))
-//            {
-//                icontainerlistener.sendWindowProperty(this, 2, this.clayliser.getField(2));
-//            }
-//
-//            if (this.furnaceBurnTime != this.clayliser.getField(0))
-//            {
-//                icontainerlistener.sendWindowProperty(this, 0, this.clayliser.getField(0));
-//            }
-//
-//            if (this.currentItemBurnTime != this.clayliser.getField(1))
-//            {
-//                icontainerlistener.sendWindowProperty(this, 1, this.clayliser.getField(1));
-//            }
-//
-//            if (this.totalCookTime != this.clayliser.getField(3))
-//            {
-//                icontainerlistener.sendWindowProperty(this, 3, this.clayliser.getField(3));
-////                icontainerlistener.sendProgressBarUpdate(this, 3, this.tileFurnace.getField(3));
-//            }
-//        }
-//
-//        this.cookTime = this.clayliser.getField(2);
-//        this.furnaceBurnTime = this.clayliser.getField(0);
-//        this.currentItemBurnTime = this.clayliser.getField(1);
-//        this.totalCookTime = this.clayliser.getField(3);
     }
-
-//    @SideOnly(Side.CLIENT)
-//    public void updateProgressBar(int id, int data)
-//    {
-//        this.clayliser.setField(id, data);
-//    }
 
     public boolean canInteractWith(EntityPlayer playerIn)
     {

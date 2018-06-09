@@ -26,7 +26,7 @@ public class BlockGlowingGlassMulti extends BlockGlass implements MetadataArray
     {
         super(materialIn, ignoreSimilar);
         this.name = name;
-        this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumGlass.one1));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumGlass.WHITE));
         this.setCreativeTab(Reactioncraft.Reactioncraft);
     }
     

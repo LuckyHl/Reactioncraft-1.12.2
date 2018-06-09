@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "active=false,facing=east": {
+            "model": "reactioncraft:claylizeridle",
+            "y" : 90
+        },
+        "active=false,facing=south": {
+            "model": "reactioncraft:claylizeridle",
+            "y" : 180
+        },
+        "active=false,facing=north": {
+            "model": "reactioncraft:claylizeridle"
+        },
+        "active=false,facing=west": {
+            "model": "reactioncraft:claylizeridle",
+            "y" : 270
+        },
+        "active=true,facing=east": {
+            "model": "reactioncraft:claylizeractive",
+            "y" : 90
+        },
+        "active=true,facing=south": {
+            "model": "reactioncraft:claylizeractive",
+            "y" : 180
+        },
+        "active=true,facing=north": {
+            "model": "reactioncraft:claylizeractive"
+        },
+        "active=true,facing=west": {
+            "model": "reactioncraft:claylizeractive",
+            "y" : 270
+        }
+    }
+}

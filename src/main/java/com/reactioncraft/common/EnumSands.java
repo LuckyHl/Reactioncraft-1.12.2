@@ -4,7 +4,7 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumSands implements IStringSerializable
 {
-    one1		(0, 0,   "one1",       "one1"),
+    DARKER_SAND(0, 0,   "0",       "one1"),
      ;
 
     private static final EnumSands[] META_LOOKUP = new EnumSands[values().length];

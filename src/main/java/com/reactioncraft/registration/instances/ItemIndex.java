@@ -5,6 +5,7 @@ import com.reactioncraft.items.*;
 import com.reactioncraft.items.chisels.ItemBaseChisel;
 import com.reactioncraft.items.tools.*;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemEnderEye;
 import net.minecraft.item.ItemSeeds;
 
 public class ItemIndex
@@ -94,7 +95,7 @@ public class ItemIndex
     public static ItemBaseHammer hammer;
     public static ItemTossable mapinabottle;
     public static ItemTossable shipinabottle;
-    public static ItemBase rcendereye;
+    public static ItemEndEye rcendereye;
     public static ItemBaseHammer bloodstoneHammer;
     public static ItemBaseDoor woodenBookcasedoor;
     public static ItemBaseDoor ironBookcasedoor;

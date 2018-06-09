@@ -4,15 +4,15 @@ import net.minecraft.util.IStringSerializable;
 
 public enum EnumDesertBlocks implements IStringSerializable
 {
-    one1		(0, 0,   "one1",       "one1"),
-    one2		(1, 1,   "one2",       "one2"),
-    one3		(2, 2,   "one3",       "one3"),
-    GRANITE(3, 3,   "two1",       "two1"),
-    two2		(4, 4,   "two2", 	   "two2"),
-    two3		(5, 5,   "two3",       "two3"),
-    three1		(6, 6,   "three1",     "three1"),
-    three2		(7, 7,   "three2",     "three2"),
-    three3		(8, 8,   "three3",     "three3");
+    one1		(0, 0,   "0",       "one1"),
+    one2		(1, 1,   "1",       "one2"),
+    one3		(2, 2,   "2",       "one3"),
+    GRANITE(3, 3,   "3",       "two1"),
+    two2		(4, 4,   "4", 	   "two2"),
+    two3		(5, 5,   "5",       "two3"),
+    three1		(6, 6,   "6",     "three1"),
+    three2		(7, 7,   "7",     "three2"),
+    three3		(8, 8,   "8",     "three3");
 //    four1		(9, 9, 	 "four1",      "four1"),
 //    four2		(10, 10, "four2",      "four2"),
 //    four3		(11, 11, "four3",      "four3"),

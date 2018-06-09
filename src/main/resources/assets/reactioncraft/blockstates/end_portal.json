@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "axis=z": {
+            "model": "reactioncraft:end_portal_z"
+        },
+        "axis=x": {
+            "model": "reactioncraft:end_portal_x"
+        },
+
+        "normal" : {
+            "model" : "reactioncraft:end_portal_x"
+        }
+    }
+}

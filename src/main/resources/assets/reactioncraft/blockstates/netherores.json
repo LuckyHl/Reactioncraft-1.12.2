@@ -8,67 +8,67 @@
     },
     "variants": {
         "type": {
-            "one1": {
+            "0": {
                 "textures": {
                     "all": "reactioncraft:blocks/NetherBlackDiamond"
                 }
             },
-            "one2": {
+            "1": {
                 "textures": {
                     "all": "reactioncraft:blocks/NetherDimeOre"
                 }
             },
-             "one3": {
+             "2": {
                 "textures": {
                     "all": "reactioncraft:blocks/NetherDragonstone"
                 }
             },
-             "two1": {
+             "3": {
                 "textures": {
                     "all": "reactioncraft:blocks/NetherGoldOre1"
                 }
             },
-             "two2": {
+             "4": {
                 "textures": {
                     "all": "reactioncraft:blocks/NetherStone"
                 }
             },
-             "two3": {
+             "5": {
                 "textures": {
                     "all": "reactioncraft:blocks/Ventinite"
                 }
             },
-             "three1": {
+             "6": {
                 "textures": {
                     "all": "reactioncraft:blocks/lightbluesymbol1"
                 }
             },
-             "three2": {
+             "7": {
                 "textures": {
                     "all": "reactioncraft:blocks/lightbluesymbol2"
                 }
             },
-             "three3": {
+             "8": {
                 "textures": {
                     "all": "reactioncraft:blocks/lightbluesymbol3"
                 }
             },
-             "four1": {
+             "9": {
                 "textures": {
                     "all": "reactioncraft:blocks/GoldSymbols1"
                 }
             },
-             "four2": {
+             "10": {
                 "textures": {
                     "all": "reactioncraft:blocks/GoldSymbols2"
                 }
             },
-            "four3": {
+            "11": {
                 "textures": {
                     "all": "reactioncraft:blocks/GoldSymbols3"
                 }
             },
-            "weathered1": {
+            "12": {
                 "inventory": {
                     "model": "cube_all"
                 },
@@ -77,16 +77,13 @@
                 }
             },
 
-          "five1": {
+          "13": {
 
           },
-          "five2" :{
+          "14" :{
 
           },
-          "five3" : {
-
-          },
-          "six1" : {
+          "15" : {
 
           }
         }

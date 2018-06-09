@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "active=false,facing=east": {
+            "model": "reactioncraft:freezeridle",
+            "y" : 90
+        },
+        "active=false,facing=south": {
+            "model": "reactioncraft:freezeridle",
+            "y" : 180
+        },
+        "active=false,facing=north": {
+            "model": "reactioncraft:freezeridle"
+        },
+        "active=false,facing=west": {
+            "model": "reactioncraft:freezeridle",
+            "y" : 270
+        },
+        "active=true,facing=east": {
+            "model": "reactioncraft:freezeractive",
+            "y" : 90
+        },
+        "active=true,facing=south": {
+            "model": "reactioncraft:freezeractive",
+            "y" : 180
+        },
+        "active=true,facing=north": {
+            "model": "reactioncraft:freezeractive"
+        },
+        "active=true,facing=west": {
+            "model": "reactioncraft:freezeractive",
+            "y" : 270
+        }
+    }
+}

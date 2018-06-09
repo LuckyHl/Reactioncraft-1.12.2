@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reactioncraft:columnReg",
+            "data": 6
+        },
+        {
+            "type": "forge:ore_dict",
+            "ore": "chisel"
+        }
+    ],
+    "result": {
+        "item": "reactioncraft:ColumnMini",
+        "count": 1,
+        "data": 6
+    }
+}

@@ -15,14 +15,23 @@
         "age=1": {
             "model": "reactioncraft:ancientplant1"
         },
+<<<<<<< HEAD
+=======
+        "age=0": {
+            "model": "reactioncraft:ancientplant0"
+        },
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
         "age=7": {
             "model": "reactioncraft:ancientplant7"
         },
         "age=6": {
             "model": "reactioncraft:ancientplant6"
+<<<<<<< HEAD
         },
         "age=0" : {
             "model" : "reactioncraft:ancientplant0"
+=======
+>>>>>>> f0aef18053091300e96805a3fdf8b31fad47382e
         }
     }
 }
