@@ -1,7 +1,7 @@
 #Creativetabs
-itemGroup.reactioncraft items=世界反应3：重置 物品
-itemGroup.reactioncraft=世界反应3：重置 方块
-itemGroup.reactioncraft food=世界反应3：重置 食物
+itemGroup.reactioncraft items=世界反应 物品
+itemGroup.reactioncraft=世界反应 方块
+itemGroup.reactioncraft food=世界反应 食物
 
 #Blocks
 tile.reactioncraft.sands.name=暗沙
